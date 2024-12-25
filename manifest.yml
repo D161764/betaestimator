@@ -1,0 +1,11 @@
+applications:
+- name: wricef-stage
+  memory: 512M
+  buildpack: nodejs_buildpack
+  command: npm run start
+  env:
+    NODE_ENV: production
+  path: .
+  health-check-type: http
+  health-check-http-endpoint: /
+  timeout: 180

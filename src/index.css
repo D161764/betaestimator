@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .prose {
+    @apply text-gray-600;
+  }
+  .prose h2 {
+    @apply text-2xl font-bold text-[#00338D] mt-8 mb-4;
+  }
+  .prose h3 {
+    @apply text-xl font-semibold text-[#00338D] mt-6 mb-3;
+  }
+  .prose p {
+    @apply mb-4;
+  }
+  .prose ul {
+    @apply list-disc pl-6 mb-4;
+  }
+  .prose ol {
+    @apply list-decimal pl-6 mb-4;
+  }
+  .prose li {
+    @apply mb-2;
+  }
+  .prose code {
+    @apply bg-gray-100 px-2 py-1 rounded text-[#00338D] font-mono;
+  }
+}
